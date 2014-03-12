@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_order_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_grey_repeat"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/top_bg1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/ImageButton.Title.LeftButton"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_btn_back_left" />
+
+        <TextView
+            android:id="@+id/txTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:gravity="center"
+            android:text="@string/str_myorder"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xlarge" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:background="@drawable/bg_grey_repeat" 
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/search_bar_height"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/cart_items_margin"
+            android:background="@drawable/search_bar_button_background"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="8.0dip"
+            android:hint="@string/str_myorder_search"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_small" >
+          
+        </EditText>
+        <ImageView 
+            android:id="@+id/iv_delete"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@drawable/search_delete"
+             android:layout_marginRight="15dp"
+             android:layout_gravity="center|right"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_message"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null"
+        android:layout_below="@+id/searchBar"
+        android:visibility="gone"
+       >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="没有订单信息"
+            android:textSize="@dimen/activity_black_text_size" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/searchBar" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_order_list"
+            style="@style/List.Fill.Tranparent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:divider="@null"
+            android:background="@color/transparent"
+            android:dividerHeight="10dp"
+            android:visibility="visible" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <!-- <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" /> -->
+    </FrameLayout>
+
+</RelativeLayout>

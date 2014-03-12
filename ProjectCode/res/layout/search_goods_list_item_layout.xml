@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ListItem.ItemNormal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/goodsimage"
+        android:layout_width="85.0dip"
+        android:layout_height="85.0dip"
+        android:src="@drawable/pic_56"
+        android:tag="search_item_ImageView@+id/goodsimage" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextView.16_Black_ListTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_toRightOf="@id/goodsimage"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="商品名称" />
+
+    <TextView
+        android:id="@+id/price_value_new"
+        style="@style/TextView.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/title"
+        android:layout_below="@id/title"
+        android:layout_marginTop="5.0dip"
+        android:maxWidth="180.0dip"
+        android:singleLine="true"
+        android:text="优惠价格" />
+
+    <TextView
+        android:id="@+id/price_value"
+        style="@style/TextView.SubText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/price_value_new"
+        android:layout_marginLeft="10.0dip"
+        android:layout_toRightOf="@id/price_value_new"
+        android:maxWidth="180.0dip"
+        android:singleLine="true"
+        android:text="原价" />
+
+    <TextView
+        android:id="@+id/selled_txt"
+        style="@style/TextView.12_Grey_ListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/price_value_new"
+        android:layout_below="@id/price_value_new"
+        android:layout_marginTop="4.0dip"
+        android:singleLine="true"
+        android:text="@string/selled_str_searchlist" />
+
+    <TextView
+        android:id="@+id/selled_num"
+        style="@style/TextView.12_Grey_ListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/selled_txt"
+        android:layout_toRightOf="@id/selled_txt"
+        android:singleLine="true"
+        android:text="xx件" />
+
+    <TextView
+        android:id="@+id/area"
+        style="@style/TextView.12_Grey_ListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/selled_txt"
+        android:layout_alignParentRight="true"
+        android:text="所在地" />
+
+</RelativeLayout>

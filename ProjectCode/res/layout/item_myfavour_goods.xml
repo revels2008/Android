@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/transparent">
+	
+    <LinearLayout
+        android:id="@+id/ll_commodity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/ck_commodity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:button="@drawable/selector_filter_price_checkbox"
+            android:gravity="center_vertical" />
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/iv_collection_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:padding="4dp"
+            android:background="@drawable/pic_56" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_shopping_cart_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ll_commodity"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/shopping_cart_list_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="哥弟"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                 />
+
+            <TextView
+                android:id="@+id/shopping_cart_list_describtion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="真丝女士丝巾 中国复古风情 红蓝丝女士丝巾 中国复古风情 红蓝"
+                android:maxLines="2"
+                android:textSize="15sp"
+                android:singleLine="true" />
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+	            <TextView
+	                android:id="@+id/shopping_cart_list_price"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="￥  99.00"
+	                android:textSize="12sp" 
+	                android:textColor="@color/red"/>
+	            
+	             <TextView
+	                android:id="@+id/shopping_cart_list_price_org"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10sp"
+	                android:text="￥  99.00"
+	                android:textSize="12sp" />
+            
+            </LinearLayout>
+            
+             <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="月销量"
+	                android:textSize="10sp" />
+	            
+	             <TextView
+	                android:id="@+id/shopping_cart_list_sales"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="10sp"
+	                android:text="1.2万件"
+	                android:textSize="12sp" />
+            
+            </LinearLayout>
+        </LinearLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_shop_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/list_padding" >
+
+        <ImageView
+            android:id="@+id/iv_settle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/shop" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/iv_settle"
+            android:text="商家:"
+            android:textColor="@color/activity_text_black"
+            android:textSize="@dimen/settile_content" />
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv1"
+            android:text="原始纸上烤肉"
+            android:textColor="@color/activity_text_black"
+            android:textSize="@dimen/settile_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/tv_shop_name"
+            android:background="@drawable/btn_massgeclick" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_dotted" />
+    <!-- 商品1开始 -->
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="@drawable/bg_bill_2"
+	    android:layout_marginBottom="8dp">
+    <LinearLayout
+        android:id="@+id/ll_order_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_commodity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/global_view_margin"
+            android:orientation="vertical" >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/im_commodity"
+                android:layout_width="@dimen/item_img_height"
+                android:layout_height="@dimen/item_img_height"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="@dimen/global_view_margin"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:src="@drawable/pic_56" />
+
+            <TextView
+                android:id="@+id/tv_order_item_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/global_view_margin"
+                android:text=""
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_shopping_cart_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/global_view_margin"
+            android:layout_marginRight="@dimen/global_view_margin"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/tv_commodity_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dip"
+                android:layout_toLeftOf="@+id/ll_price"
+                android:lines="2"
+                android:text="韩国烤肉  品味有品质的…"
+                android:textColor="@color/B_black"
+                android:textSize="@dimen/settile_content" />
+
+            <TextView
+                android:id="@+id/tv_commodity_introduction"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_commodity_name"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="2dip"
+                android:layout_toLeftOf="@+id/ll_price"
+                android:singleLine="true"
+                android:text="品味有品质的…"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textColor="@color/grey" />
+
+            <LinearLayout
+                android:id="@+id/ll_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tv_commodity_name"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_commodity_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="99.00"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/B_black" />
+
+                <TextView
+                    android:id="@+id/tv_commodity_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dip"
+                    android:text="x 1"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@color/B_black" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_commodity_introduction"
+                android:layout_marginRight="@dimen/global_view_margin"
+                android:background="@drawable/btn_bgwhite_nor"
+                android:text="退款"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:visibility="gone"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView 
+                android:id="@+id/lv_order_item_gift"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+			    android:divider="@color/transparent"
+			    android:dividerHeight="0dp"
+			    android:clickable="false"
+			    android:background="@color/transparent"
+			    android:scrollbars="none">
+                
+            </ListView>
+            </LinearLayout>
+    <!-- 商品1结束 -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_dotted" />
+    <!-- 赠品开始 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bill_2"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_commodity_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/global_view_margin"
+            android:layout_marginRight="@dimen/global_view_margin"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/im_commodity_gift"
+                android:layout_width="@dimen/item_img_height"
+                android:layout_height="@dimen/item_img_height"
+                android:layout_marginBottom="@dimen/global_view_margin"
+                android:layout_marginTop="@dimen/global_view_margin"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:src="@drawable/pic_56" />
+
+            <ImageView
+                android:id="@+id/im_commodity_giftimg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/gift" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_shopping_cart_introduction_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/tv_commodity_name_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dip"
+                android:layout_toLeftOf="@+id/ll_price_gift"
+                android:lines="2"
+                android:text="韩国烤肉  品味有品质的…"
+                android:textColor="@color/B_black"
+                android:textSize="@dimen/settile_content" />
+
+            <TextView
+                android:id="@+id/tv_commodity_introduction_gift"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_commodity_name_gift"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="2dip"
+                android:singleLine="true"
+                android:text="品味有品质的…"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textColor="@color/grey" />
+
+            <LinearLayout
+                android:id="@+id/ll_price_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tv_commodity_name_gift"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_commodity_price_now_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="99.00"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/B_black" />
+
+                <TextView
+                    android:id="@+id/tv_commodity_amount_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dip"
+                    android:text="x 1"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@color/B_black" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 赠品结束 -->
+
+</LinearLayout>

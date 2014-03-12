@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_shop_activity"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/behind_list_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp" >
+
+    <TextView
+        android:id="@+id/tv_bargin_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="优惠活动2" />
+
+    <TextView
+        android:id="@+id/tv_bargin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:text="满300减50元(8月1-31日)" />
+
+</LinearLayout>

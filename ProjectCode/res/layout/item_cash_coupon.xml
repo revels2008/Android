@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/coupon_bg1"
+    android:orientation="vertical"
+    android:weightSum="3" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/cash_coupon_10d_margin"
+            android:text="宝龙"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cash_coupon_5d_margin"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xsamll" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="1000"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xlarge" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_prop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/cash_coupon_5d_margin"
+            android:singleLine="false"
+            android:text="订单满100.01元减10.00元"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/cash_coupon_5d_margin"
+            android:text="(不包含邮费)"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xxsamll" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="使用期限"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_xxsamll" />
+
+        <TextView
+            android:id="@+id/tv_limitTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="2013.05.26—2013.09.09"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_xxsamll" />
+
+        <Button
+            android:id="@+id/btn_cash_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_bgorange_nor"
+            android:paddingLeft="@dimen/global_view_margin"
+            android:paddingRight="@dimen/global_view_margin"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium" />
+    </LinearLayout>
+
+</LinearLayout>

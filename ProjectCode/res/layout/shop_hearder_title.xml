@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/top_bg1"
+        android:gravity="center" >
+	
+         <ImageView
+            android:id="@+id/ivReturn"
+            style="@style/ImageButton.Title.LeftButton"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_btn_back_left" />
+         
+        <ImageView
+            android:id="@+id/ivFilter"
+            style="@style/ImageButton.Title.RightButton"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_filter" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/search_bar_bg_height"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@+id/ivFilter"
+            android:layout_toRightOf="@+id/ivReturn" >
+
+            <EditText
+                android:id="@+id/evSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/search_bar_height"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cart_items_margin"
+                android:background="@drawable/search_bar_button_background"
+                android:drawableLeft="@drawable/search"
+                android:drawablePadding="8.0dip"
+                android:hint="@string/search_filter_hint"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="5dip"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_medium" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="12.0dip"
+                android:clickable="true"
+                android:scaleType="center"
+                android:src="@drawable/close"
+                android:visibility="gone" />
+        </FrameLayout>
+    </RelativeLayout>
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/copoun_sort_bar_height"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:padding="4dp"
+        android:gravity="center">
+	    <LinearLayout
+	        android:id="@+id/ll_tab_item1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:padding="8dp"
+	        android:background="@drawable/selector_tab_left_yellow"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:id="@+id/tv_sort_item1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:text="人气"
+	            android:gravity="center"
+	            android:textColor="@color/coupon_sort_bar_txt_color"
+	            android:textSize="15sp" />
+	    </LinearLayout>
+	    
+	    <View style="@style/SortBar.Divider" />
+	
+	    <LinearLayout
+	        android:id="@+id/ll_tab_item2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:padding="8dp"
+	        android:background="@drawable/selector_tab_middle_yellow"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:id="@+id/tv_sort_item2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:text="类别"
+	            android:gravity="center"
+	            android:textColor="@color/coupon_sort_bar_txt_color"
+	            android:textSize="15sp" />
+	    </LinearLayout>
+	    
+	    <View style="@style/SortBar.Divider" />
+	
+	    <LinearLayout
+	        android:id="@+id/ll_tab_item3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:padding="8dp"
+	        android:gravity="center"      
+	        android:background="@drawable/selector_tab_middle_yellow"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:id="@+id/tv_sort_item3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:text="等级"
+	            android:gravity="center"
+	            android:textColor="@color/coupon_sort_bar_txt_color"
+	            android:textSize="15sp" />
+	    </LinearLayout>
+	    
+	    <View style="@style/SortBar.Divider" />
+	
+	</LinearLayout>
+</LinearLayout>

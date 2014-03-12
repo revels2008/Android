@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@drawable/nav_top_bg"
+    android:gravity="right|center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_button_height" 
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/filterBack"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_button_height"
+            android:background="@drawable/btn_return_1"
+            android:text="@string/back"
+            android:textColor="@color/filter_nav_btn_text_color"
+            android:textSize="@dimen/text_size_medium" />
+
+        <ImageView
+            android:id="@+id/filterHome"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_button_height"
+            android:layout_toRightOf="@+id/filterBack"
+            android:background="@drawable/btn_return_2"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_home" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/rfilterHome"
+        android:layout_width="@dimen/title_button_width"
+        android:layout_height="@dimen/title_button_height"
+        android:background="@drawable/selector_btn_black"
+        android:layout_marginRight="10dip"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/btn_confirm"
+        android:visibility="visible" />
+
+</RelativeLayout>

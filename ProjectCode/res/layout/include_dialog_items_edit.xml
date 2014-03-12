@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    					 <ImageView
+                                android:id="@+id/decrease"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_bg1_left"
+                                android:padding="10dp"
+                                android:src="@drawable/btn_reduce" />
+
+                            <EditText
+                                android:id="@+id/edit_num"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_toRightOf="@+id/iv_item_detail_reduce"
+                                android:background="@drawable/btn_bg2_mid"
+                                android:gravity="center"
+                                android:focusable="false"
+                                android:text="1" />
+
+                            <ImageView
+                                android:id="@+id/increase"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                android:layout_toRightOf="@+id/tv_item_detail_count"
+                                android:background="@drawable/btn_bg3_right"
+                                android:padding="10dp"
+                                android:src="@drawable/btn_raise" /> 
+    
+    
+     <!-- <ImageButton
+            android:id="@+id/decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_bg1_left" />
+
+        <EditText
+            android:id="@+id/edit_num"
+            android:layout_width="64.0dip"
+            android:layout_height="28.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/btn_bg2_mid"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="@color/D_black_light_1"
+            android:textSize="16.0dip"
+            android:focusable="false" />
+
+        <ImageButton
+            android:id="@+id/increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:src="@drawable/btn_raise" /> -->
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_current_store"
+            android:textColor="@color/filter_expandable_list_child_color"
+            android:textSize="@dimen/cart_text_normal_size"
+            android:layout_marginLeft="18dp" />	
+        
+        <TextView 
+            android:id="@+id/txt_storeNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/filter_expandable_list_child_color"
+            android:textSize="@dimen/cart_text_normal_size" />
+        
+</LinearLayout>

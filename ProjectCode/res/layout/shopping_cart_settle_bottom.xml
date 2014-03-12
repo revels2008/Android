@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/list_bgbill4_nor">
+    
+	<RelativeLayout 
+	    android:id="@+id/rl_coupon"
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/behind_list_height">
+	    
+	    <TextView 
+	        android:id="@+id/tv1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="使用宝龙抵用券"
+	        android:textSize="@dimen/settile_title"
+	        android:textColor="@color/activity_text_black"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="@dimen/list_padding"/>
+	    
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginLeft="8dp"
+	        android:layout_toRightOf="@+id/tv1">
+	        
+	   
+		    <TextView 
+		        android:id="@+id/tv_coupon_powerlong"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="不使用"
+		        android:textSize="@dimen/settile_title"
+		        android:textColor="@color/activity_text_black"
+		        android:layout_centerVertical="true"
+		        android:layout_toLeftOf="@+id/iv1"
+		        android:layout_marginRight="@dimen/list_padding"/>
+		    <ImageView 
+		        android:id="@+id/iv1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/arrow_normal"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="@dimen/list_padding"/>
+	     </RelativeLayout>
+	</RelativeLayout>
+		
+	<ImageView 
+		android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/line_dotted"/>
+		
+	<RelativeLayout 
+	    android:id="@+id/rl_send"
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/behind_list_height">
+	    
+	    <TextView 
+	        android:id="@+id/tv2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="物流方式"
+	        android:textSize="@dimen/settile_title"
+	        android:textColor="@color/activity_text_black"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="@dimen/list_padding"/>
+	    <TextView 
+	        android:id="@+id/tv_send"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="宝龙物流"
+	        android:textSize="@dimen/settile_title"
+	        android:textColor="@color/activity_text_black"
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@+id/iv2"
+	        android:layout_marginRight="@dimen/list_padding"/>
+	    <ImageView 
+	        android:id="@+id/iv2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/arrow_normal"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="@dimen/list_padding"/>
+	</RelativeLayout>
+	
+	<ImageView 
+		android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/line_dotted"/>
+	
+	<RelativeLayout 
+	    android:id="@+id/rl_pay"
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/behind_list_height">
+	    
+	    <TextView 
+	        android:id="@+id/tv3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="支付方式"
+	        android:textSize="@dimen/settile_title"
+	        android:textColor="@color/activity_text_black"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="@dimen/list_padding"/>
+	    <TextView 
+	        android:id="@+id/tv_pay"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="在线支付"
+	        android:textSize="@dimen/settile_title"
+	        android:textColor="@color/activity_text_black"
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@+id/iv3"
+	        android:layout_marginRight="@dimen/list_padding"/>
+	    <ImageView 
+	        android:id="@+id/iv3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/arrow_normal"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="@dimen/list_padding"/>
+	</RelativeLayout>
+	
+	<ImageView 
+		android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/line_dotted"/>	
+	    
+	<RelativeLayout 
+	    android:id="@+id/rl_date"
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/behind_list_height">
+	    
+	    <TextView 
+	        android:id="@+id/tv4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="预约收货时间"
+	        android:textSize="@dimen/settile_title"
+	        android:textColor="@color/activity_text_black"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="@dimen/list_padding"/>
+	    <TextView 
+	        android:id="@+id/tv_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text=""
+	        android:textSize="14sp"
+	        android:gravity="right"
+	        android:textColor="@color/activity_text_black"
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@+id/iv4"
+	        android:layout_marginRight="@dimen/list_padding"
+	        android:layout_toRightOf="@+id/tv4"/>
+	    <ImageView 
+	        android:id="@+id/iv4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/arrow_normal"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="@dimen/list_padding"/>
+	</RelativeLayout>
+	
+	
+</LinearLayout>

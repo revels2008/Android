@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/select_category"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_grey_repeat"
+    android:orientation="vertical" >
+
+    <include layout="@layout/filter_behind_title" />
+	 
+    <ExpandableListView 
+        android:id="@+id/filterExList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@null"
+        android:groupIndicator="@null"
+        android:background="@drawable/nav_bg"
+        android:dividerHeight="2dip"
+        android:divider="@drawable/nav_diliver"
+        android:childDivider="@drawable/nav_diliver"
+    ></ExpandableListView>
+
+</LinearLayout>

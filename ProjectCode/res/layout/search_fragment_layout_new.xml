@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_grey_repeat"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_search_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/search_header_one"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dip" >
+
+            <TextView
+                android:id="@+id/tv_search_word_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:text="name"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/searchlist_summary_color"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_search_word_one"
+                android:text="商品"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/red" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dip"
+                android:src="@drawable/my_profile_edit_bg" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line_full" />
+
+        <RelativeLayout
+            android:id="@+id/search_header_two"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dip" >
+
+            <TextView
+                android:id="@+id/tv_search_word_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:text="name"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/searchlist_summary_color"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_search_word_two"
+                android:text="店铺"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/red" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dip"
+                android:src="@drawable/my_profile_edit_bg" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line_full" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/list_category"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:cacheColorHint="@null"
+                android:clickable="true"
+                android:divider="@drawable/line_full"
+                android:dividerHeight="1dip"
+                android:focusable="true"
+                android:scrollbars="none">
+            </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/list_search"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:cacheColorHint="@null"
+                android:clickable="true"
+                android:divider="@drawable/line_full"
+                android:dividerHeight="1dip"
+                android:focusable="true"
+                android:scrollbars="none" >
+            </com.handmark.pulltorefresh.library.PullToRefreshListView>
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:src="@drawable/divider_style" />
+
+        <LinearLayout
+            android:id="@+id/llclear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dip"
+            android:background="@drawable/selector_btn_titlebar"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:clickable="false"
+                android:drawableLeft="@drawable/delete"
+                android:gravity="center"
+                android:text="@string/search_list_clear"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/blue" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

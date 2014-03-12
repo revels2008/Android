@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_activity_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+	<ImageView
+	    android:id="@+id/iv_activity_item"
+	    android:layout_width="480dp"
+	    android:layout_height="220dp" 
+	    android:scaleType="fitXY"
+	    android:clickable="false"/>
+	
+	<TextView
+	    android:id="@+id/tv_activity_category"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/iv_activity_item"
+	    android:paddingLeft="10dp"
+	    android:textSize="@dimen/activity_grey_text_size"
+	    android:textColor="@color/activity_text_grey"
+	    android:text="展会"/>
+	    	
+	<TextView
+	    android:id="@+id/tv_activity_advertising"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/tv_activity_category"
+	    android:paddingLeft="10dp"
+	    android:layout_marginTop="1dp"
+	    android:textSize="@dimen/activity_black_text_size"
+	    android:text="浪漫七夕，潮流着装新主张"
+	    android:textColor="@color/activity_text_black"/>
+	
+	<LinearLayout 
+	    android:id="@+id/ll_time"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_below="@+id/tv_activity_advertising"
+	    android:layout_marginTop="8dp"
+	    android:gravity="center_vertical"
+	    android:visibility="gone">
+		<ImageView 
+		    android:id="@+id/iv_activity_time"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"		    
+		    android:paddingLeft="10dp"
+		    android:src="@drawable/activity_time"
+		    />
+		    
+		<TextView 
+		    android:id="@+id/tv_activity_time"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="4dp"
+		    android:textSize="@dimen/activity_grey_text_size"
+		    android:textColor="@color/activity_text_grey"
+		    android:text="2013年7月6日-10月3日   9:30-21:00PM"
+		    />
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/ll_address"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_below="@+id/ll_time"
+	    android:layout_marginTop="4dp"
+	    android:gravity="center_vertical"
+	    android:visibility="gone">
+	
+		<ImageView 
+		    android:id="@+id/iv_activity_address"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="10dp"
+		    android:src="@drawable/activity_address"
+		    />
+		    
+		<TextView 
+		    android:id="@+id/tv_activity_address"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="4dp"
+		    android:textSize="@dimen/activity_grey_text_size"
+		    android:textColor="@color/activity_text_grey"
+		    android:text="某某区xxx某某大厦B座1701室"
+	    />
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/ll_sponor"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_below="@+id/ll_address"
+	    android:layout_marginTop="4dp"
+	    android:gravity="center_vertical"
+	    android:visibility="gone">
+	
+		<ImageView 
+		    android:id="@+id/iv_activity_sponsor"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="10dp"
+		    android:src="@drawable/activity_sponsor"
+		    />
+	    
+		<TextView 
+		    android:id="@+id/tv_activity_sponsor"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="4dp"
+		    android:textSize="@dimen/activity_grey_text_size"
+		    android:textColor="@color/activity_text_grey"
+		    android:text="城市广场"
+		    />
+	</LinearLayout>
+	
+</RelativeLayout>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_grey_repeat"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/floor_title" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/floor_list"
+        style="@style/List.Tranparent"
+        android:layout_below="@id/titlebar" >
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</RelativeLayout>

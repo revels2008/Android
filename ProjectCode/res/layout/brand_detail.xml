@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/brand_search"
+        layout="@layout/brand_search" />
+
+    <RelativeLayout
+        android:id="@+id/brand_detail_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brand_search"
+         >
+
+        <include layout="@layout/brand_detail_title" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/brand_detail_title"
+        android:paddingBottom="50dp" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshGridView
+            android:id="@+id/gv_brand_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:numColumns="2"
+            android:scrollbars="none" >
+        </com.handmark.pulltorefresh.library.PullToRefreshGridView>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_brand_detail"
+            style="@style/List.Tranparent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:scrollbars="none"
+            android:visibility="gone" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <!-- <include layout="@layout/progressbar_layout" /> -->
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <include
+            android:id="@+id/bottom"
+            layout="@layout/brand_bottom" />
+    </RelativeLayout>
+
+</RelativeLayout>

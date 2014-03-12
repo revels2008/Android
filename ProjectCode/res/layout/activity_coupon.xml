@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_grey_repeat"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rel_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/top_bg1" >
+
+        <ImageView
+            android:id="@+id/ivBack"
+            style="@style/ImageButton.Title.LeftButton"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_btn_back_left" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/search_bar_height"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/cart_items_margin"
+            android:layout_toLeftOf="@+id/iv_top_right"
+            android:layout_toRightOf="@+id/ivBack"
+            android:background="@drawable/search_bar_button_background"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="8.0dip"
+            android:hint="@string/search_filter_hint"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_small" 
+            android:visibility="gone">
+        </EditText>
+
+        <ImageView
+            android:id="@+id/iv_top_right"
+            style="@style/ImageButton.Title.RightButton"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_filterlist" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/sort_bar"
+        layout="@layout/cash_coupon_sort_bar" />
+
+    <View style="@style/ListItem.Solid.Divider.Margin" />
+
+    <!-- scrollView开始 -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.powerlong.electric.app.widget.ElasticScrollView
+            android:id="@+id/my_scroll_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:alwaysDrawnWithCache="false"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:orientation="vertical" >
+
+                <!-- 头部 -->
+
+                <include
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/elastic_listview_head" />
+
+                <LinearLayout
+                    android:id="@+id/ll_message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" 
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/no_list"
+                        />
+                    
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:gravity="center"
+                        android:text="@string/str_cash_coupon_no_thing"
+                        android:textSize="@dimen/activity_black_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/linear_left"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_right"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.powerlong.electric.app.widget.ElasticScrollView>
+
+        <!--
+             <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+        -->
+    </FrameLayout>
+
+    <!-- scrollView结束 -->
+
+</LinearLayout>

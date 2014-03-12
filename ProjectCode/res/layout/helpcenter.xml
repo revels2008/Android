@@ -1,0 +1,194 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/top_bg1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/ImageButton.Title.LeftButton"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_btn_back_left" />
+
+        <TextView
+            android:id="@+id/txTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:gravity="center"
+            android:text="@string/str_myorder"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xlarge" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/helpcenter_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:padding="0.0dip"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            >
+
+            <RelativeLayout
+                android:id="@+id/select_order"
+                style="@style/ListItem.ItemLarge"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/TextView.SettingsItemTitle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_helpcenter_selectorder" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/next_nor" />
+            </RelativeLayout>
+
+            <View style="@style/ListItem.Solid.Divider" />
+
+            <RelativeLayout
+                android:id="@+id/update_order"
+                style="@style/ListItem.ItemLarge" 
+                android:clickable="true">
+
+                <TextView
+                    style="@style/TextView.SettingsItemTitle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_helpcenter_updateorder" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/next_nor" />
+            </RelativeLayout>
+
+            <View style="@style/ListItem.Solid.Divider" />
+
+            <RelativeLayout
+                android:id="@+id/cancle_order"
+                style="@style/ListItem.ItemLarge"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/TextView.SettingsItemTitle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_helpcenter_cancleorder" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/next_nor" />
+            </RelativeLayout>
+
+            <View style="@style/ListItem.Solid.Divider" />
+
+            <RelativeLayout
+                android:id="@+id/coupon_rule"
+                style="@style/ListItem.ItemLarge"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/TextView.SettingsItemTitle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_helpcenter_couponrule" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/next_nor" />
+            </RelativeLayout>
+
+            <View style="@style/ListItem.Solid.Divider" />
+
+            <RelativeLayout
+                android:id="@+id/notreceive_item"
+                style="@style/ListItem.ItemLarge"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/TextView.SettingsItemTitle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_helpcenter_notreceive_item" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/next_nor" />
+            </RelativeLayout>
+
+            <View style="@style/ListItem.Solid.Divider" />
+
+            <RelativeLayout
+                android:id="@+id/return_shows"
+                style="@style/ListItem.ItemLarge" 
+                android:clickable="true">
+
+                <TextView
+                    style="@style/TextView.SettingsItemTitle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_helpcenter_return_shows" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/next_nor" />
+            </RelativeLayout>
+
+            <View style="@style/ListItem.Solid.Divider" />
+
+            <RelativeLayout
+                android:id="@+id/receivestate"
+                style="@style/ListItem.ItemLarge"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/TextView.SettingsItemTitle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_helpcenter_receivestate" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/next_nor" />
+            </RelativeLayout>
+
+            <View style="@style/ListItem.Solid.Divider" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

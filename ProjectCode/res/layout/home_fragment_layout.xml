@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.powerlong.electric.app"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.powerlong.electric.app.widget.LazyScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/waterfall_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/framelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="180dip"
+                android:background="#ffffff" >
+
+                <com.powerlong.electric.app.widget.PlBannerLayout
+                    android:id="@+id/banner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+                </com.powerlong.electric.app.widget.PlBannerLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#88252525"
+                    android:gravity="center"
+                    android:padding="3dip" >
+
+                    <com.powerlong.electric.app.widget.CircleFlowIndicator
+                        android:id="@+id/viewflowindic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:padding="2dip"
+                        app:activeColor="#ff0000"
+                        app:activeType="fill"
+                        app:circleSeparation="20dip"
+                        app:inactiveColor="#ffffff"
+                        app:inactiveType="fill"
+                        app:radius="4dip" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/waterfall_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </com.powerlong.electric.app.widget.LazyScrollView>
+
+</LinearLayout>

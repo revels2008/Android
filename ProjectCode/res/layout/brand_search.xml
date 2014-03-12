@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/top_bg1"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/ivReturn"
+            style="@style/ImageButton.Title.LeftButton"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_list_commodity" />
+
+        <ImageView
+            android:id="@+id/ivFilter"
+            style="@style/ImageButton.Title.RightButton"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_filterlist" 
+            android:visibility="gone"/>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/search_bar_bg_height"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@+id/ivFilter"
+            android:layout_toRightOf="@+id/ivReturn" >
+
+            <EditText
+                android:id="@+id/evSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/search_bar_height"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cart_items_margin"
+                android:background="@drawable/search_bar_button_background"
+                android:drawableLeft="@drawable/search"
+                android:drawablePadding="8.0dip"
+                android:hint="@string/search_filter_hint"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="5dip"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_small" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="12.0dip"
+                android:clickable="true"
+                android:scaleType="center"
+                android:src="@drawable/close"
+                android:visibility="gone" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nav_bg_full"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/nav_top_bg" >
+
+        <ImageButton
+            android:id="@+id/action_back"
+            android:layout_width="@dimen/title_button_height"
+            android:layout_height="@dimen/title_button_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_btn_titlebar"
+            android:scaleType="centerInside"
+            android:src="@drawable/selector_btn_back_left" />
+
+        <TextView
+            android:id="@+id/tv_nav_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="5dp"
+            android:text="选择分类"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_food"
+        android:layout_width="fill_parent"
+        android:layout_height="59dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/selector_nav_item"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/tv_navigation_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="美食"
+            android:textColor="@drawable/selector_nav_text"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_full" />
+
+    <RelativeLayout
+        android:id="@+id/rl_fun"
+        android:layout_width="fill_parent"
+        android:layout_height="59dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/selector_nav_item"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="娱乐"
+            android:textColor="@drawable/selector_nav_text"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_full" />
+
+    <RelativeLayout
+        android:id="@+id/rl_shopping"
+        android:layout_width="fill_parent"
+        android:layout_height="59dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/selector_nav_item"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="购物"
+            android:textColor="@drawable/selector_nav_text"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_full" />
+
+</LinearLayout>

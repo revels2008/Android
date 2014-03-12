@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_grey_repeat" >
+
+    <RelativeLayout
+        android:id="@+id/invalid_account"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:visibility="visible" >
+        <ImageView
+            android:id="@+id/cologo"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/company_logo_height"
+            android:background="@drawable/bg_grey_repeat"
+            android:src="@drawable/icon_company"
+            android:scaleType="centerInside"/>
+
+     	<TextView
+            android:id="@+id/friendly_tips"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cologo" 
+			android:gravity="center"
+            android:text="@string/str_friendly_tips"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="#999999" />
+
+        <LinearLayout
+            android:id="@+id/ll_operbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/friendly_tips"
+            android:layout_marginTop="@dimen/global_item_value_margin_right"
+            android:gravity="center|top"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <Button
+                android:id="@+id/btn_reg"
+                style="@style/linearlayout_btn_green"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/title_height"
+                android:layout_margin="@dimen/global_view_margin"
+                android:layout_weight="1"
+                android:text="@string/registration"
+                android:textSize="@dimen/text_size_large" />
+
+            <Button
+                android:id="@+id/btn_log"
+                style="@style/linearlayout_btn_yellow"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/title_height"
+                android:layout_margin="@dimen/global_view_margin"
+                android:layout_weight="1"
+                android:text="@string/login"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <com.powerlong.electric.app.widget.AccountListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:cacheColorHint="@null"
+        android:divider="@drawable/line_full"
+        android:fadingEdge="none"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none"
+        android:visibility="gone" >
+    </com.powerlong.electric.app.widget.AccountListView>
+
+</RelativeLayout>

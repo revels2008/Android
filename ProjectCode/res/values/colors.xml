@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#900</color>
+    <color name="green">#090</color>
+    <color name="blue">#ff0f81d9</color>
+    <color name="white">#FFF</color>
+    <color name="black">#333333</color>
+    <color name="grey">#909090</color>
+    <color name="orange">#da6432</color>
+    <color name="transparent">#0000</color>
+    <color name="light_gray">#ff948b7e</color>
+    <color name="backColor">#2000</color>
+    <color name="detail_bgColor">#f5f5f5</color>
+    <color name="defaultTextColor">#666</color>
+    <color name="dialog_divider">#ffbfcbd3</color>
+    <color name="dialog_listitem_press">#ffd0dce4</color>
+    <!-- gloabl -->
+    <color name = "gloabl_background_color">#ededed</color>
+    <!-- LIST BORDER COLOR -->
+    <color name="rounded_container_border">#ffb7babb</color>
+
+    <!-- ITEM BACKGROUND COLOR - STATE - DEFAULT -->
+    <color name="base_start_color_default">#FFFFFF</color>
+    <color name="base_end_color_default">#FFFFFF</color>
+
+    <!-- ITEM BACKGROUND COLOR - STATE - PRESSED -->
+    <color name="base_start_color_pressed">#ff3590c4</color>
+    <color name="base_end_color_pressed">#ff2570ba</color>
+
+    <!-- ITEM TEXT COLORS - STATES - PRESSED AND DEFAULT -->
+    <color name="text_color_default">#ffffff</color>
+    <color name="text_color_pressed">#000000</color>
+    <color name="item_click_top">#fff29202</color>
+    <color name="item_click_bottom">#ffe69306</color>
+    <color name="deep_gray">#ff323232</color>
+    <color name="class_item_bg_color">#ebeaea</color>
+    <color name="class_item_bg_sel_color">#d8e4f0</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c07FFF00</color>
+    <color name="result_image_border">#ff526F35</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c07FFF00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_frame">#ff526F35</color>
+    <color name="viewfinder_laser">#ff7FFF00</color>
+    <color name="viewfinder_mask">#60333333</color>
+    <color name="main_menu_text">#ff1c86ee</color>
+    <color name="text_color">#ff434343</color>
+    <!--Button Text Color -->
+	<color name="text_color_red_btn">#ffffff</color>
+	<color name="text_color_green_btn">#ffffff</color>
+	<color name="text_color_brown_btn">#ffffff</color>
+	<color name="text_color_yellow_btn">#ffffff</color>
+	<color name="text_color_white_btn">#333333</color>
+	
+	<!--Tips Text Color -->
+	<color name="text_supplementary_color">#909090</color>
+	<color name="text_country_code_color">#696969</color>
+	<color name="text_agreement_link_color">#585858</color>
+	<color name="text_sso_link_color">#126723</color>
+	
+    <!-- inner page -->
+    <color name="inner_page_item_normal">#ffffff</color>
+    <color name="inner_page_item_press">#eaeaea</color>
+    
+    <!-- 底部菜单栏配置 -->
+    <color name="tab_bar_txt_nor">#909090</color>
+    <color name="tab_bar_txt_pressed">#da6432</color>
+    
+    <!-- 搜索列表配置 -->
+	<color name="searchlist_title_color">#333333</color>
+    <color name="searchlist_summary_color">#909090</color>
+
+    
+    <color name="main_txt_color">#3c3135</color>
+    <color name="aid_txt_color">#3c3135</color>
+
+    <color name ="filter_behind_bg_color">#ededed</color>
+    <color name="filter_nav_btn_text_color">#3c3135</color>
+    <color name ="filter_expandable_list_group_color">#cccccc</color>
+    <color name ="filter_expandable_list_child_color">#666666</color>
+    
+    <color name="global_background">#fff5f5f5</color>
+    <color name="C_white">#ffffffff</color>
+    <color name="C_white_70">#b3ffffff</color>
+    <color name="B_black">#ff000000</color>
+    <color name="B_black_50">#80000000</color>
+    <color name="B_black_30">#4c000000</color>
+    <color name="B_black_85">#d9000000</color>
+    <color name="D_black_light_1">#ff333333</color>
+    <color name="D_half_black_light_1">#7f333333</color>
+    <color name="L_black_light_2">#ff444444</color>
+    <color name="E_black_light_3">#ff666666</color>
+    <color name="F_black_light_4">#ff999999</color>
+    <color name="G_black_light_5">#ffcccccc</color>
+    <color name="G_black_light_30">#4ccccccc</color>
+    <color name="K_black_light_6">#ffe5e5e5</color>
+    <color name="A_orange">#ffff4400</color>
+    <color name="H_orange_light_1">#ffe55245</color>
+    <color name="J_orange_light_2">#ffec0000</color>
+    <color name="J_half_orange_light_2">#7fec0000</color>
+    <color name="M_orange_light_3">#ffffcd6d</color>
+    <color name="I_green">#ff429917</color>
+    <color name="N_blue">#ff4598e6</color>
+
+    <!-- 导航背景色 -->
+    <color name="navigation_bg_nor">#fbb714</color>
+    <color name="navigation_bg_press">#26221f</color>
+    <color name="navigation_list_press">#aa6506</color>
+    <color name="navigation_list_divider">#aa6506</color>
+    <color name="navigation_text_nor">#d1beb0</color>
+    <color name="navigation_text_press">#fbb714</color>
+    <color name="navigation_title_bg">#594f46</color>
+    <color name="navigation_title_text">#a6978d</color>
+    <color name="cart_bottom_price">#fab000</color>
+
+    <!-- my account -->
+	<color name ="invalid_account_bg">#333333</color>
+    <color name ="firendly_tips_color">#b9b9b9</color>
+    <color name="white_list_press">#eaeaea</color>
+    
+    <!-- 活动字体颜色 -->
+	<color name ="activity_text_black">#333333</color>
+    <color name ="activity_text_grey">#909090</color>
+    <color name="activity_text_orange">#de551e</color>
+    
+    <color name="line">#cccccc</color>
+    
+    <color name="prop_btn_nor">#999999</color>
+    <color name="prop_btn_press">#27813a</color>
+    
+    <!-- 支付宝 -->
+    <color name="AppBackgroundColor">#FFC0E7FA</color>
+	<color name="TextColorBlack">#FF000000</color>
+	<color name="TextColorWhite">#FFFFFFFF</color>
+	<color name="TextColorBlue">#0066CC</color>
+	<color name="TextColorGray">#FF505050</color>
+	<color name="TextColorRed">#FFE26926</color>
+	<color name="BgColor">#ffd1dce9</color>
+	
+	<color name="BgAcount">#fff6da</color>
+	
+	<color name="chris_text_default">#e3ddc6</color>
+	<color name="chris_text_press">#e95748</color>
+	
+	<color name="groupon_detail_text_color">#000000</color>
+	
+	<color name="new_navigation_text_color">#94724d</color>
+	<color name="new_floor_text_color">#000000</color>
+	<color name="new_floor_display_all_color">#999999</color>
+	
+	<color name="new_navigation_selected_color">#cdb696</color>
+	<color name="new_circle_select">#cdb696</color>
+
+</resources>

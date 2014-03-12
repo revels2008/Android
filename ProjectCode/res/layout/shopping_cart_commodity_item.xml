@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    
+    <LinearLayout
+        android:id="@+id/ll_commodity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/ck_commodity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/selector_filter_price_checkbox"
+            android:gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/im_commodity"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:src="@drawable/pic_56" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_shopping_cart_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ll_commodity"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/shopping_cart_edit_before_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥199.00"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/shopping_cart_edit_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥99.00"
+                android:textColor="@color/B_black"
+                android:layout_marginLeft="3dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/commodity_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textColor="@color/B_black"
+                android:paddingTop="5dp"
+                android:text="x 1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:id="@+id/shopping_cart_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/shopping_cart_delete"
+                android:src="@drawable/shopping_cart_favorite" />
+
+            <ImageView
+                android:id="@+id/shopping_cart_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/shopping_cart_plus"
+                android:src="@drawable/shopping_cart_delete" />
+
+            <ImageView
+                android:id="@+id/shopping_cart_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shopping_cart_favorite"
+                android:layout_toLeftOf="@+id/shopping_cart_number"
+                android:src="@drawable/shopping_cart_minus" />
+
+            <TextView
+                android:id="@+id/shopping_cart_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shopping_cart_favorite"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shopping_cart_number"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/shopping_cart_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shopping_cart_favorite"
+                android:layout_toRightOf="@+id/shopping_cart_number"
+                android:src="@drawable/shopping_cart_plus" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--
+    <LinearLayout
+        android:id="@+id/ll_shopping_cart_introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_commodity_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="韩国烤肉"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_commodity_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="品味有品质的韩国…"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_commodity_price_before"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:layout_gravity="right"
+                android:text="¥199.00"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_commodity_price_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="99.00"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_commodity_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="x 1"
+                android:textSize="12sp" />
+        </LinearLayout>
+    -->
+
+    <RelativeLayout
+        android:id="@+id/ll_shopping_cart_introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_toRightOf="@+id/ll_commodity"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tv_commodity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:text="韩国烤肉"
+            android:singleLine="true"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/B_black" />
+
+        <TextView
+            android:id="@+id/tv_commodity_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_commodity_name"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="2dip"
+            android:text="品味有品质的…"
+            android:singleLine="true"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/B_black" />
+
+        <TextView
+            android:id="@+id/tv_commodity_price_before"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:text="¥199.00"
+            android:textAppearance="@android:style/TextAppearance.Small" />
+
+        <TextView
+            android:id="@+id/tv_commodity_price_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_commodity_introduction"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="3dip"
+            android:text="99.00"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/B_black" />
+
+        <TextView
+            android:id="@+id/tv_commodity_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_commodity_introduction"
+            android:layout_marginTop="2dip"
+            android:text="x 1"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/B_black" />
+    </RelativeLayout>
+
+</RelativeLayout>

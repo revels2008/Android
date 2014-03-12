@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@drawable/bottom_bg" >
+
+    <ImageView
+        android:id="@+id/ivBack"
+        style="@style/ImageButton.Bottom.LeftButton"
+        android:layout_centerVertical="true"
+        android:src="@drawable/selector_btn_back_left"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_xlarge" 
+        android:visibility="gone"/>
+    
+    <ImageView
+        android:id="@+id/ivEdit"
+        android:layout_marginRight="@dimen/title_rightButton_padding"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/title_button_width"
+        android:layout_height="@dimen/title_button_height"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_btn_titlebar"
+        android:src="@drawable/btn_edit"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ListItem.ItemNormal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:descendantFocusability="blocksDescendants">
+
+      <LinearLayout
+        android:id="@+id/ll_commodity"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal" 
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/ck__shop_commodity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusable="false"
+            android:button="@drawable/selector_filter_price_checkbox"
+            android:gravity="center_vertical" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/iv_collection_shop_logo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/pic_bg"
+            android:scaleType="fitXY"
+            android:padding="2dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/pic_56" />
+		
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/floor_title_shop"
+        style="@style/TextView.16_Black_ListTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:layout_toRightOf="@+id/ll_commodity"
+        android:layout_toLeftOf="@+id/tv_shop_list_evaluate"
+        android:maxLines="2"
+        android:text="商品名称" />
+    
+    <TextView 
+        android:id="@+id/floor_shop_details"
+        style="@style/TextView.12_Grey_ListTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3.0dip"
+        android:layout_alignLeft="@+id/floor_title_shop"
+        android:layout_below="@+id/floor_title_shop"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:text="商家描述"
+        android:visibility="gone"
+        />
+
+    <!-- <RatingBar
+        android:id="@+id/floor_evaluation"
+        style="@style/ShopRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/floor_title_shop"
+        android:layout_below="@+id/floor_shop_details"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="3.0dip"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="1.5" /> -->
+        
+        <TextView 
+        android:id="@+id/tv_shop_list_evaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/white"
+        android:background="@drawable/evaluate"/>
+
+    <TextView
+        android:id="@+id/floor_products_categories"
+        style="@style/TextView.12_Black_ListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/floor_title_shop"
+        android:layout_alignBottom="@+id/ll_commodity"
+        android:paddingBottom="12dp"
+        android:singleLine="true"
+        android:text="珠宝\首饰" />
+    <TextView
+        android:id="@+id/floor_favour_num"
+        style="@style/TextView.12_Orange_ListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/floor_title_shop"
+        android:layout_marginTop="3.0dip"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/floor_products_categories"
+        android:singleLine="true"
+        android:text="(233)" 
+        android:visibility="gone"/>
+</RelativeLayout>

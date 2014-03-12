@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/behind_list_height"
+    android:orientation="vertical" >
+    
+	<TextView 
+	    android:id="@+id/tv_pay_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="8dp"
+	    android:layout_marginTop="8dp"
+	    android:text="支付宝移动快捷支付"
+	    android:textSize="18sp"/>
+	
+	<TextView 
+	    android:id="@+id/tv_pay_content"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="8dp"
+	    android:text="安全、便捷、保障"
+	    android:layout_below="@+id/tv_pay_name"
+	    android:visibility="gone"/>
+	
+	<ImageView 
+	    android:id="@+id/iv_pay"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/arrow_normal"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="8dp"
+	    android:layout_centerVertical="true"/>
+</RelativeLayout>

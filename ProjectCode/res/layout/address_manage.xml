@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_grey_repeat"
+     >
+    
+	<include layout="@layout/address_manage_title"
+	    android:id="@+id/address_manage_title"/>
+	
+	<com.handmark.pulltorefresh.library.PullToRefreshListView 
+	    android:id="@+id/lv_address"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:cacheColorHint="#000000"
+	    android:background="@color/transparent"
+	    android:divider="@drawable/line_dotted"
+	    android:listSelector="@color/transparent"
+	    android:layout_below="@+id/address_manage_title">
+	    
+	</com.handmark.pulltorefresh.library.PullToRefreshListView>	    
+	    
+</RelativeLayout>

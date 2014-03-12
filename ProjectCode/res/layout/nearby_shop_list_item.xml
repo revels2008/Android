@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ListItem.ItemNormal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_bgwhite_nor" >
+
+       <ImageView
+        android:id="@+id/shop_list_shopimage"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_height="320.0dip"
+        android:background="@drawable/pic_bg"
+        android:padding="@dimen/global_photo_padding"
+        android:scaleType="fitXY"
+        android:src="@drawable/pic_96" />
+
+    <TextView
+        android:id="@+id/shop_list_title_shop"
+        style="@style/TextView.16_Black_ListTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:layout_below="@+id/shop_list_shopimage"
+        android:layout_alignLeft="@+id/shop_list_shopimage"
+        android:maxLines="2"
+        android:text="商品名称"
+        android:visibility="gone" />
+    
+    <TextView 
+        android:id="@+id/shop_list_shop_details"
+        style="@style/TextView.12_Grey_ListTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:layout_below="@+id/shop_list_title_shop"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:maxLines="3"
+        android:layout_alignLeft="@+id/shop_list_shopimage"
+        android:layout_marginRight="5dp"
+        android:text="商家描述"
+        android:visibility="gone"
+        />
+
+    <RatingBar
+        android:id="@+id/shop_list_evaluation"
+        style="@style/ShopRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shop_list_title_shop"
+        android:layout_below="@+id/shop_list_shopimage"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="3.0dip"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="1.5" 
+        android:visibility="gone"/>
+    
+    <TextView 
+        android:id="@+id/tv_shop_list_evaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/shop_list_shopimage"
+        android:gravity="center"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/white"
+        android:background="@drawable/evaluate"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/shop_list_favour_txt"
+        style="@style/TextView.12_Black_ListTitle"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shop_list_evaluation"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="3.0dip"
+        android:layout_toRightOf="@+id/shop_list_products_categories"
+        android:singleLine="true"
+        android:text="@string/favour_txt" 
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/shop_list_favour_num"
+        style="@style/TextView.12_Orange_ListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shop_list_evaluation"
+        android:layout_marginTop="3.0dip"
+        android:layout_toRightOf="@+id/shop_list_favour_txt"
+        android:singleLine="true"
+        android:text="(233)" 
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/shop_list_products_categories"
+        style="@style/TextView.12_Black_ListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_shop_list_evaluate"
+        android:layout_alignLeft="@+id/shop_list_shop_details"
+        android:layout_marginTop="8dp"
+        android:maxLines="3"
+        android:textSize="18sp"
+        android:text="珠宝\\首饰" />
+
+</RelativeLayout>

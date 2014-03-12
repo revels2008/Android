@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp" >
+    
+	<EditText
+	    android:id="@+id/tv_address_edit_item"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerVertical="true"
+	    android:layout_marginLeft="10dp"
+	    android:background="@color/transparent"
+	    android:text="某某某"/>
+
+	
+	<ImageView 
+	    android:id="@+id/iv_edit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerVertical="true"
+	    android:layout_alignParentRight="true"
+	    android:paddingRight="10dp"
+	    android:src="@drawable/arrow_normal"
+	    android:visibility="gone"/>
+</RelativeLayout>

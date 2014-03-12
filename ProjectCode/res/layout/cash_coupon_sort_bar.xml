@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/copoun_sort_bar_bg_height"
+    android:background="@drawable/bg_grey_repeat"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/global_view_margin"
+        android:layout_marginRight="@dimen/global_view_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/btn_new"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/copoun_sort_bar_height"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_left_yellow"
+            android:text="@string/str_notification_new"
+            android:textColor="@color/coupon_sort_bar_txt_color"
+            android:textSize="@dimen/text_size_medium" />
+			
+        	<requestFocus/>
+        	
+        	<View style="@style/SortBar.Divider" />
+       	
+        <Button
+            android:id="@+id/btn_mycoupon"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/copoun_sort_bar_height"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dip"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_right_yellow"
+            android:text="@string/str_notification_mycoupon"
+            android:textColor="@color/coupon_sort_bar_txt_color"
+            android:textSize="@dimen/text_size_medium" />
+
+        
+    </LinearLayout>
+
+
+</LinearLayout>

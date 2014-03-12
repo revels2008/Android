@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_grey_repeat"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        layout="@layout/confirm_action_title_bar" />
+	
+    <EditText 
+        android:id="@+id/emailEdit"
+        style="@style/EditText.EMAIL"
+        android:layout_margin="@dimen/global_view_margin"
+        android:padding="@dimen/global_view_margin"
+        />
+
+    <TextView
+        android:id="@+id/edit_mail_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_view_margin"
+        android:layout_marginTop="@dimen/global_item_value_margin_right"
+        android:text="@string/profile_edit_email_notify"
+        android:textColor="@color/text_supplementary_color"
+        android:textSize="@dimen/text_size_small" />
+</LinearLayout>

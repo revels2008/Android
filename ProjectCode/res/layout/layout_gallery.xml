@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.powerlong.electric.app.widget.CoverFlow
+        xmlns:coverflow="http://schemas.android.com/apk/res/com.powerlong.electric.app"
+        android:id="@+id/coverflowReflect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        coverflow:imageHeight="150dip"
+        coverflow:imageReflectionRatio="0.2"
+        coverflow:imageWidth="100dip"
+        coverflow:reflectionGap="2dip"
+        coverflow:withReflection="true" />
+
+</LinearLayout>

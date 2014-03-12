@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_address"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:paddingTop="8.0dip" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/price"
+            android:singleLine="true"
+            android:text="@string/cart_edit_count_title"
+            android:textColor="@color/black"
+            android:textSize="16.0dip" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:textColor="@color/orange"
+            android:textSize="16.0dip" 
+            android:ellipsize="end"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32.0dip"
+        android:layout_marginTop="32.0dip"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cart_delete" />
+
+        <EditText
+            android:id="@+id/edit_num"
+            android:layout_width="64.0dip"
+            android:layout_height="28.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/inputbox"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="@color/D_black_light_1"
+            android:textSize="16.0dip" />
+
+        <ImageButton
+            android:id="@+id/increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:src="@drawable/cart_add" />
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_margin="@dimen/cart_items_margin"
+        style="@android:style/ButtonBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        >
+        <Button android:id="@+id/cart_ok"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="确定"/>
+            
+        <Button 
+            android:id="@+id/cart_cancel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="取消"/>
+    </LinearLayout>
+</LinearLayout>

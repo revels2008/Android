@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView 
+        android:id="@+id/nearby_default"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerInside"
+        android:src="@drawable/nearby_defualt"/>
+    
+    <ListView
+        android:id="@+id/lv_nearby"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@null"
+        android:cacheColorHint="@null"
+        android:divider="@color/transparent"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:visibility="gone" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/imageview_above_more"
+        style="@style/title_right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/tab_selected"
+        android:gravity="center"
+        android:src="@drawable/button_title_more" 
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="二维码扫描"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <com.powerlong.electric.app.widget.PlWebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </com.powerlong.electric.app.widget.PlWebView>
+
+        <!--
+             <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+        -->
+    </FrameLayout>
+    
+
+</LinearLayout>

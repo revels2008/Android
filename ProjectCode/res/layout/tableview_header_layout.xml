@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <CheckBox
+        android:id="@+id/checkBoxHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    	android:layout_marginLeft="@dimen/cart_items_margin"
+        android:layout_centerVertical="true"
+        android:button="@drawable/selector_filter_price_checkbox"
+        android:text="味都WEIDU"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/cart_text_normal_size" />
+
+  <!--   <TextView
+        android:id="@+id/shopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/checkBoxHeader"
+        android:layout_marginLeft="@dimen/cart_items_margin"
+        android:layout_centerVertical="true"
+        android:textColor="@color/B_black"
+        android:text="韩国料理连锁店" /> -->
+
+    <!-- <ImageView
+        android:id="@+id/iv_shopping_cart_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:src="@drawable/edit" /> -->
+
+</RelativeLayout>

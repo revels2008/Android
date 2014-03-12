@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_grey_repeat"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/nextstep_action_title_bar" />
+
+    <TextView
+        android:id="@+id/register_verify_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_view_margin"
+        android:layout_marginTop="@dimen/global_item_value_margin_right"
+        android:text="@string/str_register_verify_tips"
+        android:textColor="@color/text_supplementary_color"
+        android:textSize="@dimen/text_size_medium" />
+    
+    <TextView
+        android:id="@+id/mobile_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_view_margin"
+        android:layout_marginTop="@dimen/global_item_value_margin_right"
+        android:text="+8613346576881"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_medium" />
+    
+    <EditText
+            android:id="@+id/code_edit"
+            style="@style/EditText.NORMAL"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:layout_marginTop="@dimen/global_item_value_margin_right"
+            android:layout_marginLeft="@dimen/global_view_margin"
+            android:layout_marginRight="@dimen/global_view_margin"
+            android:hint="@string/str_register_input_verify_code"
+            android:imeOptions="actionDone"
+            android:paddingLeft="@dimen/global_view_margin"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_medium" />
+
+    <TextView
+        android:id="@+id/count_down_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/global_view_margin"
+        android:layout_marginTop="@dimen/global_item_value_margin_right"
+        android:text="@string/str_register_count_down_tips"
+        android:textColor="@color/text_supplementary_color"
+        android:textSize="@dimen/text_size_small" />
+</LinearLayout>

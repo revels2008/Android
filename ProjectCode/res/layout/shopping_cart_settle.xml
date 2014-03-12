@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@drawable/bg_grey_repeat" >    
+    
+    	<RelativeLayout
+	        android:id="@+id/title"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/title_height"
+	        android:background="@drawable/bottom_bg"
+	        android:gravity="center_vertical"
+	        android:layout_alignParentBottom="true" >
+	        
+			<ImageView
+	            android:id="@+id/ivReturn"
+	            style="@style/ImageButton.Title.LeftButton"
+	            android:src="@drawable/selector_btn_back_left"
+	            android:layout_centerVertical="true" />
+		
+		
+			<RelativeLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_toLeftOf="@+id/ivPay"
+			    android:layout_toRightOf="@+id/ivReturn">
+             <TextView
+	            android:id="@+id/txTitle"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="总计"
+	            android:textColor="@color/white"
+	            android:textSize="@dimen/settile_content" 
+	            android:layout_centerInParent="true"
+	            android:singleLine="true"
+	            />
+  		 </RelativeLayout>
+
+	        <Button
+	            android:id="@+id/ivPay"
+	            android:layout_width="wrap_content"
+	            android:layout_height="@dimen/title_button_height"
+	            android:layout_alignParentRight="true"
+	            android:layout_gravity="center"
+	            android:layout_marginRight="@dimen/title_rightButton_padding"
+	            android:text="  提交订单  "
+	            android:textColor="@color/white"
+	            android:background="@drawable/selector_add_address"
+	            android:layout_centerVertical="true"/>
+		</RelativeLayout>
+    
+	<ScrollView
+	    android:id="@+id/sv_settle_account"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/list_padding"
+	    android:layout_marginLeft="@dimen/list_padding"
+	    android:layout_marginRight="@dimen/list_padding"
+	    android:layout_marginBottom="@dimen/list_padding"
+	    android:layout_above="@+id/title"
+	    android:scrollbars="none">	    
+	    
+	</ScrollView>
+	
+	
+</RelativeLayout>

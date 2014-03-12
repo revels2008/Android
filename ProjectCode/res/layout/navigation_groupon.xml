@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDE9E6"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title" />
+
+    <include layout="@layout/groupon_sort_tab" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_groupon_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@drawable/line_full"
+            android:dividerHeight="1dp"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            style="@style/List.Tranparent" />
+
+        <!-- <include layout="@layout/progressbar_layout" /> -->
+    </FrameLayout>
+
+</LinearLayout>

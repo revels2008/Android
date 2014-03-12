@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+	    android:id="@+id/rl_grid_item_out"
+	    android:layout_width="193dp"
+	    android:layout_height="243dp"
+	    android:background="@drawable/pic_bg">
+	    
+ 	    <ImageView 
+	        android:id="@+id/iv_grid_item"
+	        android:layout_height="164dp"
+	        android:layout_width="164dp"
+	        android:layout_marginLeft="14dp"
+	        android:layout_marginTop="14dp"
+	        android:layout_marginRight="14dp"
+        	android:scaleType="fitCenter"
+        	android:src="@drawable/home_half"/>
+ 	    
+ 	     <ImageView
+	        android:id="@+id/groupon_flag"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/groupon_tab2" 
+	        android:layout_alignParentRight="true"
+	        android:visibility="gone"/>
+	   
+	    
+	    <TextView 
+	        android:id="@+id/tv_grid_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="6dp"
+	        android:layout_below="@+id/iv_grid_item"
+	        android:layout_marginLeft="20dp"
+	        android:text="串珠 82391P"
+	        android:singleLine="true"
+	        android:textSize="@dimen/groupon_detail_grey_content"/>
+	    <TextView 
+	        android:id="@+id/tv_grid_price"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/tv_grid_name"
+	        android:layout_marginTop="2dp"
+	        android:layout_alignLeft="@+id/tv_grid_name"
+	        android:textColor="@color/red"
+	        android:text="￥980"/>
+	    
+	    <LinearLayout 
+	        android:id="@+id/ll_brand_detail_favour"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40dp"
+	        android:layout_below="@+id/tv_grid_price"
+	        android:layout_alignLeft="@+id/tv_grid_name"
+	        android:layout_marginLeft="-15dip"
+	        android:orientation="horizontal">	
+	        <LinearLayout 
+	            android:id="@+id/ll_grid_item_favour"
+	            android:layout_width="0dip"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal"
+	            android:gravity="center"
+	            android:layout_weight="0.8"
+	            android:visibility="gone">
+	            
+	            <ImageView 
+	                android:id="@+id/iv_shop_detail_favour"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:src="@drawable/btn_favorite_nor"/>
+	            <TextView 
+	                android:id="@+id/tv_shop_detail_favour"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:singleLine="true"
+	                android:text="收藏"/>
+	        </LinearLayout>  
+	        <LinearLayout 
+	            android:id="@+id/ll_brand_detail_cart"
+	            android:layout_width="0dip"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal"
+	            android:gravity="center"
+	            android:layout_weight="1"
+	            android:visibility="gone">
+	            
+	            <ImageView 
+	                android:id="@+id/iv_shop_detail_cart"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:src="@drawable/btn_shopcar_nor"/>
+	            <TextView 
+	                android:id="@+id/tv_shop_detail_cart"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:singleLine="true"
+	                android:text="购物车"/>
+	        </LinearLayout>        
+	        
+	    </LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

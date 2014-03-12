@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/expanded_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView android:id="@+id/expanded_item_icon"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:layout_marginLeft="12dip"
+        android:layout_marginTop="1dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/search_listdress"/>
+    
+    <TextView
+        android:id="@+id/expanded_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginTop="3dip"
+        android:layout_toRightOf="@+id/expanded_item_icon"
+        android:text="衣服"
+        android:textColor="#333333"
+        android:textSize="18.0sp" 
+        />
+    
+    <TextView
+        android:id="@+id/expanded_item_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/expanded_item_title"
+        android:layout_below="@+id/expanded_item_title"
+        android:singleLine="true"
+        android:text="男装.女装.童装"
+        android:textColor="#ffcbcbcb"
+        android:textSize="15.0sp" 
+        />
+    
+     <ImageView android:id="@+id/expanded_item_expand_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="15dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/arrow_down"/>
+     
+     <LinearLayout android:id="@+id/bottom_space"
+         android:layout_width="fill_parent"
+         android:layout_height="8dip"
+         android:layout_below="@+id/expanded_item_icon"
+         android:orientation="vertical"
+         ></LinearLayout>
+     
+     <LinearLayout android:id="@+id/details_panel"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/bottom_space"
+         android:background="@drawable/tip_detail_bg"
+         android:orientation="vertical"
+         ></LinearLayout>
+    
+
+</RelativeLayout>

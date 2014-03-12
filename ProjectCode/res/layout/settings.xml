@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_grey_repeat" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/back_action_title_bar" />
+
+    <ScrollView
+        android:id="@+id/settings_ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar"
+        android:fadingEdge="none"
+        android:padding="0.0dip"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/settings_nick_header"
+                style="@style/ListItem.SectionTitle"
+                android:focusable="false" >
+
+                <TextView
+                    android:id="@+id/settings_nick_header_text"
+                    style="@style/TextView.SettingsSectionTitle"
+                    android:text="@string/str_setting_nick_tag" />
+            </RelativeLayout>
+
+            <View style="@style/ListItem.Solid.Divider" />
+
+            <com.powerlong.electric.app.widget.SettingsItemLayout
+                android:id="@+id/settings_nickname"
+                style="@style/ListItem.ItemLarge"
+                android:tag="settings_Item@+id/settings_nickname" >
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    style="@style/TextView.SettingsItemTitle"
+                    android:layout_centerVertical="true"
+                    android:tag="settings_item_title"
+                    android:text="@string/str_setting_nick_default" />
+
+                <ImageView
+                    android:id="@+id/settings_nickname_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/next_nor"
+                    android:tag="settings_ImageView@+id/settings_nickname_arrow" />
+            </com.powerlong.electric.app.widget.SettingsItemLayout>
+
+            <View style="@style/ListItem.Solid.Divider" />
+
+            <RelativeLayout
+                android:id="@+id/settings_profile_header"
+                style="@style/ListItem.SectionTitle"
+                android:focusable="false" >
+
+                <TextView
+                    android:id="@+id/settings_profile_header_text"
+                    style="@style/TextView.SettingsSectionTitle"
+                    android:text="@string/str_setting_profile_tag" />
+            </RelativeLayout>
+
+            <View style="@style/ListItem.Solid.Divider" />
+
+            <com.powerlong.electric.app.widget.SettingsItemLayout
+                android:id="@+id/settings_profile"
+                style="@style/ListItem.ItemLarge"
+                android:tag="settings_Item@+id/settings_profile" >
+
+                <TextView
+                    android:id="@+id/tv_profile"
+                    style="@style/TextView.SettingsItemTitle"
+                    android:layout_centerVertical="true"
+                    android:tag="settings_item_title"
+                    android:text="@string/str_setting_profile_default" />
+
+                <ImageView
+                    android:id="@+id/settings_profile_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/next_nor"
+                    android:tag="settings_ImageView@+id/settings_profile_arrow" />
+            </com.powerlong.electric.app.widget.SettingsItemLayout>
+
+            <View style="@style/ListItem.Solid.Divider" />
+
+            <RelativeLayout
+                android:id="@+id/settings_notify_header"
+                style="@style/ListItem.SectionTitle"
+                android:focusable="false" >
+
+                <TextView
+                    android:id="@+id/settings_notify_header_text"
+                    style="@style/TextView.SettingsSectionTitle"
+                    android:text="@string/str_setting_notify_tag" />
+            </RelativeLayout>
+
+            <View style="@style/ListItem.Solid.Divider" />
+
+            <com.powerlong.electric.app.widget.SettingsItemLayout
+                android:id="@+id/settings_notify_enable"
+                style="@style/ListItem.ItemLarge"
+                android:tag="settings_Item@+id/settings_notify_enable" >
+
+                <TextView
+                    android:id="@+id/tv_notify_enable"
+                    style="@style/TextView.SettingsItemTitle"
+                    android:layout_centerVertical="true"
+                    android:tag="settings_item_title"
+                    android:text="@string/str_setting_notify_tag_accepted" />
+
+                <com.powerlong.electric.app.widget.SwitchButton
+                    android:id="@+id/settings_notify_switchbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:tag="settings_SwitchButton" >
+                </com.powerlong.electric.app.widget.SwitchButton>
+            </com.powerlong.electric.app.widget.SettingsItemLayout>
+
+            <View style="@style/ListItem.Solid.Divider" />
+
+            <com.powerlong.electric.app.widget.SettingsItemLayout
+                android:id="@+id/settings_notify_time"
+                style="@style/ListItem.ItemLarge"
+                android:tag="settings_Item@+id/settings_notify_time" >
+
+                <TextView
+                    android:id="@+id/tv_notify_time"
+                    style="@style/TextView.SettingsItemTitle"
+                    android:layout_centerVertical="true"
+                    android:tag="settings_item_title"
+                    android:text="@string/str_setting_notify_tag_timerange" />
+
+                <ImageView
+                    android:id="@+id/settings_notify_time_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/next_nor"
+                    android:tag="settings_ImageView@+id/settings_notify_time_arrow" />
+            </com.powerlong.electric.app.widget.SettingsItemLayout>
+
+            <View style="@style/ListItem.Solid.Divider" 
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/settings_support_header"
+                style="@style/ListItem.SectionTitle"
+                android:focusable="false"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/settings_support_header_text"
+                    style="@style/TextView.SettingsSectionTitle"
+                    android:text="@string/str_setting_support_tag" 
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <View style="@style/ListItem.Solid.Divider" 
+                android:visibility="gone"/>
+
+            <com.powerlong.electric.app.widget.SettingsItemLayout
+                android:id="@+id/settings_support_help"
+                style="@style/ListItem.ItemLarge"
+                android:tag="settings_Item@+id/settings_support_help" 
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_support_help"
+                    style="@style/TextView.SettingsItemTitle"
+                    android:layout_centerVertical="true"
+                    android:tag="settings_item_title"
+                    android:text="@string/str_setting_support_help" />
+
+                <ImageView
+                    android:id="@+id/settings_support_help_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/next_nor"
+                    android:tag="settings_ImageView@+id/settings_support_help_arrow" />
+            </com.powerlong.electric.app.widget.SettingsItemLayout>
+
+            <View style="@style/ListItem.Solid.Divider" 
+                android:visibility="gone"/>
+
+            <com.powerlong.electric.app.widget.SettingsItemLayout
+                android:id="@+id/settings_support_contacts"
+                style="@style/ListItem.ItemLarge"
+                android:tag="settings_Item@+id/settings_support_contacts" 
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_support_contacts"
+                    style="@style/TextView.SettingsItemTitle"
+                    android:layout_centerVertical="true"
+                    android:tag="settings_item_title"
+                    android:text="@string/str_setting_support_contacts" />
+
+                <ImageView
+                    android:id="@+id/settings_support_contacts_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/next_nor"
+                    android:tag="settings_ImageView@+id/settings_support_contacts_arrow" />
+            </com.powerlong.electric.app.widget.SettingsItemLayout>
+
+            <View style="@style/ListItem.Solid.Divider"
+                android:visibility="gone" />
+
+            <com.powerlong.electric.app.widget.SettingsItemLayout
+                android:id="@+id/settings_support_scored"
+                style="@style/ListItem.ItemLarge"
+                android:tag="settings_Item@+id/settings_support_scored" 
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_support_score"
+                    style="@style/TextView.SettingsItemTitle"
+                    android:layout_centerVertical="true"
+                    android:tag="settings_item_title"
+                    android:text="@string/str_setting_support_scored" />
+
+                <ImageView
+                    android:id="@+id/settings_support_score_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/next_nor"
+                    android:tag="settings_ImageView@+id/settings_support_score_arrow" />
+            </com.powerlong.electric.app.widget.SettingsItemLayout>
+
+            <View style="@style/ListItem.Solid.Divider" />
+
+            <RelativeLayout
+                android:id="@+id/settings_about_header"
+                style="@style/ListItem.SectionTitle"
+                android:focusable="false" >
+
+                <TextView
+                    android:id="@+id/settings_about_header_text"
+                    style="@style/TextView.SettingsSectionTitle"
+                    android:text="@string/str_setting_about_tag" />
+            </RelativeLayout>
+
+            <View style="@style/ListItem.Solid.Divider" />
+
+            <com.powerlong.electric.app.widget.SettingsItemLayout
+                android:id="@+id/settings_about_update"
+                style="@style/ListItem.ItemLarge"
+                android:tag="settings_Item@+id/settings_about_update" >
+
+                <TextView
+                    android:id="@+id/tv_support_update"
+                    style="@style/TextView.SettingsItemTitle"
+                    android:layout_centerVertical="true"
+                    android:tag="settings_item_title"
+                    android:text="@string/str_setting_about_update" />
+
+                <ImageView
+                    android:id="@+id/settings_about_update_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/next_nor"
+                    android:tag="settings_ImageView@+id/settings_about_update_arrow" />
+            </com.powerlong.electric.app.widget.SettingsItemLayout>
+
+            <View style="@style/ListItem.Solid.Divider" />
+
+            <com.powerlong.electric.app.widget.SettingsItemLayout
+                android:id="@+id/settings_about_us"
+                style="@style/ListItem.ItemLarge"
+                android:tag="settings_Item@+id/settings_about_us" >
+
+                <TextView
+                    android:id="@+id/tv_about_us"
+                    style="@style/TextView.SettingsItemTitle"
+                    android:layout_centerVertical="true"
+                    android:tag="settings_item_title"
+                    android:text="@string/str_setting_about_us" />
+
+                <ImageView
+                    android:id="@+id/settings_about_us_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/next_nor"
+                    android:tag="settings_ImageView@+id/settings_about_us_arrow" />
+            </com.powerlong.electric.app.widget.SettingsItemLayout>
+
+            <View style="@style/ListItem.Solid.Divider" />
+
+            <com.powerlong.electric.app.widget.SettingsItemLayout
+                android:id="@+id/settings_about_agreement"
+                style="@style/ListItem.ItemLarge"
+                android:tag="settings_Item@+id/settings_about_agreement"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_about_agreement"
+                    style="@style/TextView.SettingsItemTitle"
+                    android:layout_centerVertical="true"
+                    android:tag="settings_item_title"
+                    android:text="@string/str_setting_about_agreement" />
+
+                <ImageView
+                    android:id="@+id/settings_about_agreement_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/next_nor"
+                    android:tag="settings_ImageView@+id/settings_settings_about_agreement_arrow" />
+            </com.powerlong.electric.app.widget.SettingsItemLayout>
+
+            <View style="@style/ListItem.Solid.Divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_logout"
+                style="@style/linearlayout_btn_red"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dip"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <Button
+                    android:id="@+id/logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:drawableLeft="@drawable/btn_logoff"
+                    android:gravity="center"
+                    android:text="@string/str_setting_logout"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+   <!--  <RelativeLayout
+        android:id="@+id/progressBarView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.5"
+        android:background="@color/black"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/logout_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout> -->
+
+</RelativeLayout>

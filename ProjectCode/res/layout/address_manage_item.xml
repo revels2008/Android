@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginLeft="8dp" 
+    android:layout_marginRight="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="@drawable/bg_grey_repeat">
+    
+
+    <ImageView 
+        android:id="@+id/iv_edit_address"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:padding="20dp"
+        android:src="@drawable/btn_revise"/>
+    
+    <LinearLayout
+        android:id="@+id/ll_address_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/iv_edit_address"
+        android:paddingLeft="5dp">
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+	       <TextView 
+	           android:id="@+id/tv_address_name"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:text="某某某 "
+	           android:textSize="18sp"/>
+	       
+	       <TextView 
+	           android:id="@+id/tv_address_phoneNum"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:text="13977778888"
+	           android:layout_toRightOf="@+id/tv_address_name"
+	           android:layout_marginLeft="5dp"
+	           android:textSize="18sp"/>
+       </RelativeLayout>
+       
+        <TextView 
+           android:id="@+id/tv_address_city"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="上海 上海市 长宁区"
+           android:textSize="15sp"/>
+        
+         <TextView 
+           android:id="@+id/tv_address"  
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=""
+           android:textSize="15sp"/>
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@+id/iv_address_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ll_address_item"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:src="@drawable/confirm"
+        />
+</RelativeLayout>

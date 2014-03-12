@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.powerlong.electric.app"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_grey_repeat" >
+
+        <com.powerlong.electric.app.widget.ElasticScrollView
+	        xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/waterfall_scroll"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:alwaysDrawnWithCache="false"
+	        android:paddingTop="15dp" >
+	
+	        <LinearLayout
+	            android:id="@+id/elastic_root_lay"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:background="@null"
+	            android:orientation="vertical" >
+	
+	            <include
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                layout="@layout/elastic_listview_head" />
+				
+	          	<FrameLayout
+	                android:id="@+id/framelayout"
+	                android:layout_width="fill_parent"
+	                android:layout_height="180dip"
+	                android:background="@null" >
+	
+	                <com.powerlong.electric.app.widget.PlBannerLayout
+	                    android:id="@+id/banner"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent">
+	                </com.powerlong.electric.app.widget.PlBannerLayout>
+					
+	             
+	                <LinearLayout
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="bottom"
+	                    android:background="@null"
+	                    android:gravity="center"
+	                    android:padding="3dip" >
+						
+	                    <com.powerlong.electric.app.widget.CircleFlowIndicator
+	                        android:id="@+id/viewflowindic"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center_horizontal|bottom"
+	                        android:padding="5dip"
+	                        app:activeColor="#ff0000"
+	                        app:activeType="fill"
+	                        app:circleSeparation="12dip"
+	                        app:inactiveColor="#ffffff"
+	                        app:inactiveType="fill"
+	                        app:radius="4dip" />
+	                </LinearLayout>
+	            </FrameLayout>
+	
+	            <!--
+	            <LinearLayout
+	                android:id="@+id/waterfall_container"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical" >
+	            </LinearLayout>
+	            -->
+	
+	            <com.powerlong.electric.app.widget.GridLayout
+	                android:id="@+id/banner_recommand_layout"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:paddingBottom="4.0dip"
+	                android:paddingLeft="4.0dip"
+	                android:paddingRight="4.0dip"
+	                android:paddingTop="4.0dip" />
+	            <!-- 
+	            <android.support.v7.widget.GridLayout
+	                android:id="@+id/gridlay"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+	            </android.support.v7.widget.GridLayout>
+	            -->
+	        </LinearLayout>
+	    </com.powerlong.electric.app.widget.ElasticScrollView>
+	    
+        <ImageView android:id="@+id/shade"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/top_bg_shade"
+	                    android:layout_gravity="top"/>
+	   
+	       
+</FrameLayout>
